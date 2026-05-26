@@ -1,0 +1,9 @@
+
+=== Default threshold (2000ms - warn should NOT fire): diagnostics.laneWaitWarnMs=undefined ===
+  task A: A done, task B: B done
+
+=== Custom threshold 100ms (warn SHOULD fire on Task B): diagnostics.laneWaitWarnMs=100 ===
+[diagnostic] lane wait exceeded: lane=test-lane waitedMs=502 warnAfterMs=100 queueAhead=0 activeAhead=1 activeNow=0 queueBehind=0
+  task A: A done, task B: B done
+
+=== Done ===
